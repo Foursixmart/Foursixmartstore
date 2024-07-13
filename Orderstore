@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foursixmart Store Order Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-FdQs33ro0Xu8utrIDmj4CBfltPl35DBqpWVkZ7Fsn5pkHmzvQ1Kc2ssjsBs4mM112roLBszdvwGfUH63TBF5yPXd3Si39qkuT4Tgo9C2bLlIVr8Bj85BNEhHpHA7-H2PI244tyD7eSEk3wDikdzPVHEVJ6SQzv2kGOFW-Aj3tpBSJQdpxLn2y8fWK6Y5/s3264/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000000;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar {
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        input, select, textarea {
+            font-size: 14px;
+        }
+        button {
+            cursor: pointer;
+        }
+        .blue {
+            background-color: #007BFF;
+            border-color: #007BFF;
+            color: #ffffff;
+        }
+        .blue:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .red {
+            background-color: #FF0000;
+            border-color: #FF0000;
+            color: #ffffff;
+        }
+        .red:hover {
+            background-color: #CC0000;
+            border-color: #CC0000;
+        }
+        .small-button {
+            width: auto;
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 5px 10px;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar"></div>
+    <div class="container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4PkszbeAY7SLJLsakFhdXL2r9VuqvEwu5cjxEi_eH7dfZakDlTFN2eGgk1fAwBNbb-m_aZiOJao9wXAFU79cpAHyKhmwpePAlXeVZP-0b1hILQ6EseeMhHKd2JMyDefQ9zFAnMhBrEDErQK6DYgi4JAJOXfSQjMjs5Tnf6a-_gthHmNLXj-0NgdQK1y2r/s1600/Banner.jpg" alt="Banner" class="banner">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3LMTpqiCOIuZz77hmqwDez_41DkrUavoM7YGV0aJRIU-ORfJbifaincl75E90WuICJBNyj68QmmIb1rA7kR_WwNfounMfwSverT8l22p_QJ4zAjZar8oIIj8-O-WZx9QMUd8R4Pu-OpuS2ODmQJO-pa6bqsZZdeCgyIG68pId2fqw7UEbxHtZ9LKUXzI8/s1600/foursixmart.png" alt="Foursixmart Logo" class="logo">
+        <form id="orderForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            
+            <label for="phone">No Whatsapp:</label>
+            <input type="text" id="phone" name="phone" placeholder="e.g. 6281234567890" required>
+            
+            <label for="item">Item:</label>
+            <select id="item" name="item" required>
+                <option value="">Pilih Layanan</option>
+                <optgroup label="Layanan Sosial Media">
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Telegram">Telegram</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                </optgroup>
+                <optgroup label="Layanan Aplikasi Premium">
+                    <option value="Netflix">Netflix</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="WeTV">WeTV</option>
+                    <option value="iQIYI">iQIYI</option>
+                    <option value="Canva">Canva</option>
+                    <option value="IFLIX">IFLIX</option>
+                    <option value="Viu">Viu</option>
+                    <option value="Vidio">Vidio</option>
+                    <option value="Remini">Remini</option>
+                    <option value="HBO GO">HBO GO</option>
+                    <option value="Bstasion">Bstasion</option>
+                    <option value="Amazon Prime Video">Amazon Prime Video</option>
+                    <option value="VyprVPN">VyprVPN</option>
+                    <option value="Drakor ID">Drakor ID</option>
+                    <option value="Cathplay">Cathplay</option>
+                    <option value="Wattpad">Wattpad</option>
+                    <option value="Capcut">Capcut</option>
+                    <option value="Loklok">Loklok</option>
+                    <option value="Vsco">Vsco</option>
+                    <option value="Resso Musik">Resso Musik</option>
+                </optgroup>
+            </select>
+            
+            <label for="notes">Keterangan:</label>
+            <textarea id="notes" name="notes" placeholder="Tambahkan keterangan tambahan di sini..."></textarea>
+            
+            <button type="submit" class="blue">Order</button>
+        </form>
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="window.open('https://chat.whatsapp.com/E1ptuUp1BJ44JJprn0WzDs', '_blank')" class="red small-button">Join Group</button>
+            <button onclick="window.open('https://whatsapp.com/channel/0029VajfCcqDzgTInzYn3413', '_blank')" class="red small-button">Join Saluran</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Mendapatkan nilai dari input form
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const item = document.getElementById('item').value;
+            const notes = document.getElementById('notes').value;
+
+            // Membentuk pesan yang akan dikirim via WhatsApp
+            const message = `Hai *Foursixmart* Saya ingin Order\nNama: ${name}\nNo Whatsapp: ${phone}\nItem: ${item}\nKeterangan: ${notes}`;
+
+            // Membentuk URL WhatsApp
+            const whatsappURL = `https://api.whatsapp.com/send?phone=083877803504&text=${encodeURIComponent(message)}`;
+
+            // Membuka URL di tab baru
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
